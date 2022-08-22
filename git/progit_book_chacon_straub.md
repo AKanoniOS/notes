@@ -115,6 +115,16 @@ You can make new branches other than your main branch - we will cover that later
 
 Git status will tell you if files are untracked and if you need to add anything for your next commit. 
 
+Short git status looks like this:
+```
+git status -s
+```
+or 
+```
+git status --short
+```
+
+
 ### Adding files - Staging for Commits
 Use
 ```
