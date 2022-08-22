@@ -87,8 +87,31 @@ Navigate to the directory where you want to store your repo, make the repo on Gi
 ```
     git clone *ssh key here*
 ```
+## 2.2 Git Basics - Recording Changes to the Repository
+So you're starting to edit your project...
+Now you'll want to save the changes to the repo!
+There are **2 stages** that your files can be in when they are in your working directory:
+1. Tracked
+2. Untracked
 
-## 2.1 Git Basics - 
+Untracked files are files that git doesn't know about. Commit them for git to track them. 
+
+### What's the status??
+Track the status of your files with the following command:
+```
+git status
+```
+You'll see a message like this:
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+```
+Here you see the branch you're working on is up to date with the repo. Your working tree (working directory) is clean (none of your tracked files are modified).
+
+You can make new branches other than your main branch - we will cover that later! 
+
+Git status will tell you if files are untracked and if you need to add anything for your next commit. 
 ## 2.1 Git Basics - 
 ## 2.1 Git Basics - 
 ## 2.1 Git Basics - 
