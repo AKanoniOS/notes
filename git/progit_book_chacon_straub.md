@@ -111,7 +111,32 @@ Here you see the branch you're working on is up to date with the repo. Your work
 
 You can make new branches other than your main branch - we will cover that later! 
 
+?? How do I jump branches when I make new ones? 
+
 Git status will tell you if files are untracked and if you need to add anything for your next commit. 
+
+### Adding files - Staging for Commits
+Use
+```
+git add 
+```
+to stage files or directories for a commit.
+
+Using the following will add everything in the current directory.
+```
+git add .
+
+```
+The period means everything in the current directory. Two periods would mean add everything in the parent directory, which would look like this:
+```
+git add ..
+```
+You can target specific files. This would only stage this one markdown file for a commit.
+```
+git add progit_book_chacon_straub.md
+```
+
+
 ## 2.1 Git Basics - 
 ## 2.1 Git Basics - 
 ## 2.1 Git Basics - 
