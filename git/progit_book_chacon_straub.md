@@ -174,6 +174,8 @@ You can use ```git log``` to view the log history. Use *options* to change how i
 ```git commit --amend``` allows you to modify the commit message of the last commit.<br>
 ```git reset HEAD <file>``` allows you to unstage a file. <br>
 Use ```git restore <file>``` to discard changes in the working directory.
+Use ```git restore --staged <file>``` to unstage a file. 
+Use ```git restore <file>``` to revert back to your last committed or staged version (dangerous!).
 ## 2.5 Git Basics - Working with Remotes
 ## 2.6 Git Basics - Tagging
 ## 2.7 Git Basics - Git Aliases
