@@ -145,9 +145,36 @@ You can target specific files. This would only stage this one markdown file for 
 ```
 git add progit_book_chacon_straub.md
 ```
-
-
-## 2.1 Git Basics - 
-## 2.1 Git Basics - 
-## 2.1 Git Basics - 
-## 2.1 Git Basics - 
+## 2.3 Git Basics - Viewing the Commit History
+You can use ```git log``` to view the log history. Use *options* to change how it's presented:
+* ```--oneline``` - present brief log with each commit in one line
+* ```--stat``` - present statistics for changes
+* ```--pretty``` - change the formatting
+* ```---pretty=format: "enter here"``` - custom formatting
+    * ```%H``` - Commit hash
+    * ```%h``` - abbreviated commit hash
+    * ```%an``` - author name
+    * ```%ae``` - author email
+    * ```%ad``` - author date
+    * ```%cn``` - committer name
+    * ```%ce``` - committer email
+    * ```%cd``` - commit date
+* ```--graph``` - show
+* ```--shortstat```
+* ```--name-only```
+### Limiting Log Output
+* ```-<n>```
+    * ```git log -2``` - shows last two commits
+* ```--since```
+    * ```git log --since=5.weeks``` - shows commits since 5 weeks ago
+* ```--until```
+* ```-S```
+    * ```git log -S function_name``` - only shows last commit that added or removed a reference to a specific function
+## 2.4 Git Basics - Undoing Things
+```git commit --amend``` allows you to modify the commit message of the last commit.<br>
+```git reset HEAD <file>``` allows you to unstage a file. <br>
+Use ```git restore <file>``` to discard changes in the working directory.
+## 2.5 Git Basics - Working with Remotes
+## 2.6 Git Basics - Tagging
+## 2.7 Git Basics - Git Aliases
+## 2.8 Git Basics - Summary
